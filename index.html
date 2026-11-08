@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel Luggeri</title>
+  <meta name="description" content="Ciao, sono Samuel: suono il basso, sto in regia e scrivo software per il live. Qui trovi Duetto, LiveStage e Rustbucket.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/samuel.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav" aria-label="Principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Samuel</a>
+      <ul class="nav-links">
+        <li><a href="#passioni">Cosa mi piace</a></li>
+        <li><a href="#progetti">Progetti</a></li>
+        <li><a href="#chi-sono">Chi sono</a></li>
+      </ul>
+      <a class="nav-cta" href="https://github.com/Samuel782" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <header class="hero section-dark">
+      <div class="wrap center">
+        <img class="avatar reveal" src="assets/samuel.png" width="360" height="360" alt="Samuel Luggeri">
+        <h1 class="hero-title reveal">Ciao, sono <span class="grad">Samuel.</span></h1>
+        <p class="hero-sub reveal">Suono il basso, passo le serate dietro un mixer e quando torno a casa
+          faccio scrivere all'AI il software che avrei voluto avere in regia.
+          Io porto le idee, i caffè e i bug report. Questo è il mio angolo:
+          ti racconto un po' di me e delle cose a cui sto lavorando.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="#passioni">Fatti un giro</a>
+          <a class="link-arrow" href="#progetti">Vai ai progetti</a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </header>
+
+    <!-- PASSIONI -->
+    <section id="passioni" class="section-light">
+      <div class="wrap">
+        <h2 class="section-title reveal">Le cose che mi piacciono.</h2>
+        <p class="section-sub reveal">Musica, cavi, saldatore e una tastiera. Più o meno in quest'ordine.</p>
+
+        <div class="photos">
+          <figure class="photo photo-tall reveal">
+            <img src="assets/basso.jpg" width="1125" height="2000" loading="lazy"
+                 alt="Samuel seduto a terra in sala prove mentre suona un basso sunburst davanti all'amplificatore.">
+            <figcaption>
+              <h3>Il basso</h3>
+              <p>Seduto per terra, davanti all'ampli, a cercare il groove giusto. È da qui che parte tutto.</p>
+            </figcaption>
+          </figure>
+          <figure class="photo photo-tall reveal">
+            <img src="assets/regia-pianoforte.jpg" width="997" height="1518" loading="lazy"
+                 alt="Un mixer digitale in primo piano e, sullo sfondo, microfoni puntati su un pianoforte a coda.">
+            <figcaption>
+              <h3>La regia</h3>
+              <p>Microfoni sul pianoforte, fader sotto le dita, cuffie in testa. Registrare è la parte che mi diverte di più.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="grid grid-3 likes">
+          <article class="like reveal">
+            <span class="like-emoji" aria-hidden="true">🎚️</span>
+            <h3>Il live</h3>
+            <p>Audio, video e luci per eventi e spettacoli. Montare, cablare, far suonare tutto prima che entri il pubblico.</p>
+          </article>
+          <article class="like reveal">
+            <span class="like-emoji" aria-hidden="true">🔌</span>
+            <h3>Smanettare</h3>
+            <p>Arduino, ESP32, un po' di elettronica e la stampante 3D che lavora mentre io faccio altro.</p>
+          </article>
+          <article class="like reveal">
+            <span class="like-emoji" aria-hidden="true">⌨️</span>
+            <h3>Il codice</h3>
+            <p>Quando in regia qualcosa non esiste, apro l'editor e lo spiego per bene all'AI.
+              Lei scrive, io controllo, provo e dico “no, non così”. Pigro sì, ma esigente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO PROGETTI -->
+    <section id="progetti" class="section-dark intro-projects">
+      <div class="wrap center">
+        <h2 class="section-title reveal">Le cose che costruisco.</h2>
+        <p class="lede reveal">Niente azienda, niente clienti: sono progetti miei, nati da problemi veri
+          trovati in regia e portati avanti nel tempo libero. Uno è già pronto da usare,
+          gli altri due sono ancora in cantiere.</p>
+        <p class="aside reveal">Ok, confesso: sono pigro. Gran parte del codice la scrive l'AI.
+          Io faccio la parte divertente: decido cosa deve fare, lo provo su banchi e impianti veri
+          e mi lamento finché non funziona.</p>
+      </div>
+    </section>
+
+    <!-- DUETTO -->
+    <section id="duetto" class="product section-dark">
+      <div class="wrap center">
+        <span class="badge badge-live reveal">Pronto da usare · v1.1.0</span>
+        <h2 class="product-name reveal">Duetto</h2>
+        <p class="product-tag reveal">Due lingue. Due schermi.<br>Una regia.</p>
+        <p class="lede reveal">Sottotitoli live in italiano e inglese per eventi, conferenze e dirette.
+          Tu parli, Duetto trascrive e traduce nell'altra lingua, e i sottotitoli finiscono
+          sulla diretta in OBS e sul maxischermo in sala. Non serve uno stenografo
+          e non serve saper programmare: bastano pochi tasti.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="https://github.com/Samuel782/Duetto/releases" target="_blank" rel="noopener">Scaricalo per Mac o Windows</a>
+          <a class="link-arrow" href="https://github.com/Samuel782/Duetto" target="_blank" rel="noopener">Guarda il codice</a>
+        </div>
+      </div>
+
+      <div class="wrap-wide">
+        <figure class="device reveal">
+          <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="assets/duetto-regia.png" width="1800" height="1085"
+               alt="La regia di Duetto: ingresso audio, lingua AUTO, IT o EN, anteprime delle uscite Streaming e Sala e pannello di stato.">
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <div class="grid grid-3">
+          <article class="tile reveal">
+            <span class="tile-icon" aria-hidden="true">◉</span>
+            <h3>Trascrive al volo</h3>
+            <p>In un paio di secondi il parlato diventa testo, e gli dai una mano con i nomi e le sigle da riconoscere.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="tile-icon" aria-hidden="true">⇄</span>
+            <h3>Traduce da solo</h3>
+            <p>Capisce frase per frase se si parla italiano o inglese, usa il tuo glossario e toglie gli “ehm”.</p>
+          </article>
+          <article class="tile reveal">
+            <span class="tile-icon" aria-hidden="true">⌘</span>
+            <h3>Fatto per la regia</h3>
+            <p>Avvio, pausa, lingua e uscite con un tasto, così gli occhi restano sul palco.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="split">
+          <figure class="split-media reveal">
+            <img src="assets/duetto-uscita-streaming.png" width="1400" height="787" loading="lazy"
+                 alt="Uscita per lo streaming: sottotitoli su sfondo trasparente sopra il video.">
+            <figcaption>Per la diretta: sfondo trasparente, pronto per OBS</figcaption>
+          </figure>
+          <figure class="split-media reveal">
+            <img src="assets/duetto-uscita-sala.png" width="1400" height="787" loading="lazy"
+                 alt="Uscita per il maxischermo: testo grande su sfondo nero, con la traduzione in un altro colore.">
+            <figcaption>Per la sala: testo grande, si legge anche dall'ultima fila</figcaption>
+          </figure>
+        </div>
+        <p class="stack reveal"><span>Electron</span><span>Node.js</span><span>WebSocket</span><span>AssemblyAI</span><span>DeepL</span><span>macOS · Windows</span></p>
+      </div>
+    </section>
+
+    <!-- LIVESTAGE -->
+    <section id="livestage" class="product section-light">
+      <div class="wrap center">
+        <img class="app-icon reveal" src="assets/livestage-icon.png" width="144" height="144" alt="">
+        <span class="badge badge-dev reveal">Ci sto lavorando</span>
+        <h2 class="product-name reveal">LiveStage</h2>
+        <p class="product-tag reveal">Tutto lo spettacolo.<br>Un solo programma.</p>
+        <p class="lede reveal">Il mio progetto più ambizioso. L'idea è semplice: in regia non voglio
+          dieci programmi aperti. Audio con stem e click, video e projection mapping, slide,
+          timer e gobbo, luci DMX e controllo esterno, tutto in un'unica schermata.
+          Scritto in Rust, gira su macOS, Windows e Linux.</p>
+        <div class="cta-row reveal">
+          <a class="link-arrow" href="https://github.com/Samuel782/LiveStage" target="_blank" rel="noopener">Segui i lavori su GitHub</a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="stats reveal">
+          <div><strong>1 kHz</strong><span>il ritmo a cui gira lo show</span></div>
+          <div><strong>~1 ms</strong><span>di precisione sui cue</span></div>
+          <div><strong>3</strong><span>sistemi operativi</span></div>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="tile tile-light reveal">
+            <h3>Audio che non perde un colpo</h3>
+            <p>Il motore audio non si blocca mai, nemmeno se l'interfaccia è impegnata. Stem sulle uscite che vuoi, tutto sincrono al campione, click con count-in.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Video sulla GPU</h3>
+            <p>Projection mapping con deformazione, edge blending e maschere. E il video resta agganciato all'audio.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Luci</h3>
+            <p>Art-Net e sACN, libreria di fixture, palette, submaster ed effetti per le teste mobili.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Parla con tutto</h3>
+            <p>MIDI, OSC, WebSocket, NDI e timecode SMPTE, MTC e LTC, da seguire o da generare.</p>
+          </article>
+        </div>
+
+        <p class="note reveal">Piccola confessione: LiveStage è nato in Swift e girava solo su Mac.
+          Poi l'ho ricominciato da capo in Rust, per portarlo ovunque e avere il pieno controllo sui tempi.</p>
+        <p class="stack stack-light reveal"><span>Rust</span><span>cpal</span><span>wgpu</span><span>Symphonia</span><span>Art-Net · sACN</span><span>NDI</span></p>
+      </div>
+    </section>
+
+    <!-- RUSTBUCKET -->
+    <section id="rustbucket" class="product section-dark">
+      <div class="wrap center">
+        <span class="badge badge-dev reveal">Ci sto lavorando</span>
+        <h2 class="product-name reveal">Rustbucket</h2>
+        <p class="product-tag reveal">Un banco storico.<br>Un driver nuovo.</p>
+        <p class="lede reveal">Il Digidesign Control|24 è nato per parlare solo con Pro Tools.
+          Io volevo farlo parlare con il mio computer, così ho studiato il suo protocollo
+          pacchetto per pacchetto e gli ho scritto un driver tutto nuovo, in Rust e open source.</p>
+        <div class="cta-row reveal">
+          <a class="link-arrow" href="https://github.com/Samuel782/RustBucket" target="_blank" rel="noopener">Codice e protocollo su GitHub</a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="console reveal" aria-hidden="true">
+          <div class="console-strips"></div>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="tile reveal">
+            <h3>Tutto il banco</h3>
+            <p>24 fader motorizzati, V-Pot con i loro LED, scribble strip, meter e display del trasporto.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Tutto scritto</h3>
+            <p>Ogni dettaglio del protocollo che ho scoperto è documentato, con le prove di dove viene.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Provato sul serio</h3>
+            <p>Funziona su un Control|24 vero, da macOS. Prossima tappa: collegarlo a una DAW.</p>
+          </article>
+        </div>
+        <p class="stack reveal"><span>Rust</span><span>Ethernet</span><span>Reverse engineering</span><span>Wireshark</span></p>
+      </div>
+    </section>
+
+    <!-- ALTRI PROGETTI -->
+    <section id="altri" class="section-light">
+      <div class="wrap">
+        <h2 class="section-title reveal">E poi ci sono questi.</h2>
+        <p class="section-sub reveal">Esperimenti, giochi e cose fatte per imparare.</p>
+        <div class="grid grid-4">
+          <a class="mini reveal" href="https://github.com/Samuel782/Timer" target="_blank" rel="noopener">
+            <span class="lang">Swift</span><h3>Timer</h3><p>Un timer per lo show, scritto in Swift.</p>
+          </a>
+          <a class="mini reveal" href="https://github.com/Samuel782/ArduinoUsbMixer" target="_blank" rel="noopener">
+            <span class="lang">C++</span><h3>Arduino USB Mixer</h3><p>Un mixer USB costruito con Arduino.</p>
+          </a>
+          <a class="mini reveal" href="https://github.com/Samuel782/Esp32WebStepperMotor" target="_blank" rel="noopener">
+            <span class="lang">C++</span><h3>ESP32 Stepper</h3><p>Un motore passo-passo comandato dal browser.</p>
+          </a>
+          <a class="mini reveal" href="https://github.com/Samuel782/PoolGame" target="_blank" rel="noopener">
+            <span class="lang">Python</span><h3>Pool Game</h3><p>Il gioco del biliardo, in Python.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SONO -->
+    <section id="chi-sono" class="section-dark about">
+      <div class="wrap">
+        <h2 class="section-title reveal">Due parole su di me.</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="big">Sono di Brindisi e mi sono diplomato in Informatica e Telecomunicazioni
+              all'ITT “G. Giorgi”.</p>
+            <p>Dal 2025 do una mano come tecnico audio, video e luci a Yeahjasi Brindisi APS:
+              monto gli impianti, seguo eventi e spettacoli e in studio registro podcast e musica.
+              È lì che mi vengono quasi tutte le idee: ogni volta che in regia manca qualcosa,
+              finisce nella mia lista di cose da programmare.</p>
+            <p>Ho anche la certificazione Dante, livelli 1 e 2, per l'audio e il video in rete.</p>
+          </div>
+          <div class="skills reveal">
+            <div class="skill-group">
+              <h3>Scrivo (o faccio scrivere) in</h3>
+              <p>Rust · Swift · C · C++ · Java · Python · JavaScript · SQL · HTML e CSS</p>
+            </div>
+            <div class="skill-group">
+              <h3>So usare</h3>
+              <p>Mixer e impianti audio · Video e luci · Mix e mastering · Reti Dante</p>
+            </div>
+            <div class="skill-group">
+              <h3>Mi diverto con</h3>
+              <p>Elettronica · Arduino ed ESP32 · Stampa 3D e modellazione</p>
+            </div>
+            <div class="skill-group">
+              <h3>Parlo</h3>
+              <p>Italiano · Inglese (B2)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti" class="section-light contact">
+      <div class="wrap center">
+        <h2 class="section-title reveal">Facciamo due chiacchiere?</h2>
+        <p class="lede reveal">Un evento, un'idea strana o un vecchio banco da far parlare con il computer:
+          se ti va di parlarne, mi trovi qui.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="https://github.com/Samuel782" target="_blank" rel="noopener">Trovami su GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Samuel Luggeri. Anche questo sito l'ha scritto l'AI: io ho scelto le foto.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
