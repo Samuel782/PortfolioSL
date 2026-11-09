@@ -244,8 +244,14 @@ section { padding: 120px 0; }
 
 /* Avatar */
 .avatar {
-  width: 148px; height: 148px; border-radius: 50%; object-fit: cover; margin: 0 auto 28px;
-  box-shadow: 0 0 0 4px rgba(255,255,255,.08), 0 0 0 5px rgba(41,151,255,.35), 0 24px 60px rgba(41,151,255,.25);
+  width: 236px; margin: 0 auto 36px; padding: 10px 10px 0; background: #fafafa;
+  border-radius: 6px; transform: rotate(-3deg);
+  box-shadow: 0 2px 6px rgba(0,0,0,.4), 0 30px 70px rgba(41,151,255,.22);
+}
+.avatar img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; }
+.avatar figcaption {
+  padding: 8px 0 10px; text-align: center; color: #1d1d1f;
+  font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive; font-weight: 600; font-size: 30px; line-height: 1;
 }
 
 /* Passioni */
@@ -303,6 +309,7 @@ section { padding: 120px 0; }
 /* ---------- Motion ---------- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
+.avatar.reveal.in { transform: rotate(-3deg); }
 .no-js .reveal { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
