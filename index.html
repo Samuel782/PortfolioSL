@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samuel Luggeri</title>
-  <meta name="description" content="Ciao, sono Samuel: suono il basso, sto in regia e scrivo software per il live. Qui trovi Duetto, LiveStage e Rustbucket.">
+  <meta name="description" content="Ciao, sono Samuel: suono il basso, sto in regia e scrivo software per il live. Qui trovi Duetto, LiveStage, Rustbucket e LiveKit-OBS.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="assets/samuel.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400..700&family=JetBrains+Mono:wght@500&family=Caveat:wght@600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
         <li><a href="#passioni">Cosa mi piace</a></li>
         <li><a href="#progetti">Progetti</a></li>
         <li><a href="#chi-sono">Chi sono</a></li>
+        <li><a href="#contatti">Contatti</a></li>
       </ul>
       <a class="nav-cta" href="https://github.com/Samuel782" target="_blank" rel="noopener">GitHub</a>
     </div>
@@ -99,8 +100,8 @@
       <div class="wrap center">
         <h2 class="section-title reveal">Le cose che costruisco.</h2>
         <p class="lede reveal">Niente azienda, niente clienti: sono progetti miei, nati da problemi veri
-          trovati in regia e portati avanti nel tempo libero. Uno è già pronto da usare,
-          gli altri due sono ancora in cantiere.</p>
+          trovati in regia e portati avanti nel tempo libero. Alcuni sono già pronti da usare,
+          altri sono ancora in cantiere.</p>
         <p class="aside reveal">Ok, confesso: sono pigro. Gran parte del codice la scrive l'AI.
           Io faccio la parte divertente: decido cosa deve fare, lo provo su banchi e impianti veri
           e mi lamento finché non funziona.</p>
@@ -110,16 +111,15 @@
     <!-- DUETTO -->
     <section id="duetto" class="product section-dark">
       <div class="wrap center">
-        <span class="badge badge-live reveal">Pronto da usare · v1.1.0</span>
+        <span class="badge badge-live reveal">Pronto da usare · Nuova versione 1.2</span>
         <h2 class="product-name reveal">Duetto</h2>
-        <p class="product-tag reveal">Due lingue. Due schermi.<br>Una regia.</p>
-        <p class="lede reveal">Sottotitoli live in italiano e inglese per eventi, conferenze e dirette.
-          Tu parli, Duetto trascrive e traduce nell'altra lingua, e i sottotitoli finiscono
-          sulla diretta in OBS e sul maxischermo in sala. Non serve uno stenografo
-          e non serve saper programmare: bastano pochi tasti.</p>
+        <p class="product-tag reveal">Tante lingue. Due schermi.<br>Una regia.</p>
+        <p class="lede reveal">Sottotitoli live per eventi, conferenze e dirette. Tu parli, Duetto trascrive
+          e traduce nelle lingue che scegli, e i sottotitoli finiscono sulla diretta in OBS, anche come CC,
+          e sul maxischermo in sala. Non serve uno stenografo e non serve saper programmare.</p>
         <div class="cta-row reveal">
-          <a class="btn btn-primary" href="https://github.com/Samuel782/Duetto/releases" target="_blank" rel="noopener">Scaricalo per Mac o Windows</a>
-          <a class="link-arrow" href="https://github.com/Samuel782/Duetto" target="_blank" rel="noopener">Guarda il codice</a>
+          <a class="btn btn-primary" href="duetto.html">Scopri tutto su Duetto</a>
+          <a class="link-arrow" href="https://github.com/Samuel782/Duetto/releases/latest" target="_blank" rel="noopener">Scarica l'ultima versione</a>
         </div>
       </div>
 
@@ -141,7 +141,7 @@
           <article class="tile reveal">
             <span class="tile-icon" aria-hidden="true">⇄</span>
             <h3>Traduce da solo</h3>
-            <p>Capisce frase per frase se si parla italiano o inglese, usa il tuo glossario e toglie gli “ehm”.</p>
+            <p>Capisce frase per frase che lingua si parla, usa il tuo glossario e toglie gli “ehm”. Ogni schermo può avere la sua lingua.</p>
           </article>
           <article class="tile reveal">
             <span class="tile-icon" aria-hidden="true">⌘</span>
@@ -164,7 +164,7 @@
             <figcaption>Per la sala: testo grande, si legge anche dall'ultima fila</figcaption>
           </figure>
         </div>
-        <p class="stack reveal"><span>Electron</span><span>Node.js</span><span>WebSocket</span><span>AssemblyAI</span><span>DeepL</span><span>macOS · Windows</span></p>
+        <p class="stack reveal"><span>Electron</span><span>Node.js</span><span>WebSocket</span><span>AssemblyAI</span><span>DeepL</span><span>macOS · Windows</span><span>OBS WebSocket</span></p>
       </div>
     </section>
 
@@ -253,6 +253,74 @@
       </div>
     </section>
 
+    <!-- LIVEKIT-OBS -->
+    <section id="livekit" class="product section-light section-white">
+      <div class="wrap center">
+        <span class="badge badge-live reveal">Pronto da usare</span>
+        <h2 class="product-name reveal">LiveKit-OBS</h2>
+        <p class="product-tag reveal">La grafica per le tue dirette.<br>Senza plugin.</p>
+        <p class="lede reveal">Sfondi animati, schermate di inizio, pausa e fine, overlay e transizioni
+          per OBS Studio. Ogni elemento è un file HTML che si apre da solo: lo aggiungi come fonte browser
+          e funziona, con lo sfondo trasparente già a posto.</p>
+        <div class="cta-row reveal">
+          <a class="link-arrow" href="https://github.com/Samuel782/LiveKit-OBS" target="_blank" rel="noopener">Scaricalo da GitHub</a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="gallery">
+          <figure class="shot reveal">
+            <img src="assets/livekit-inizio-diretta.jpg" width="960" height="540" loading="lazy"
+                 alt="Schermata di inizio diretta con titolo, conto alla rovescia e barra di avanzamento.">
+            <figcaption>Inizio diretta, con il conto alla rovescia</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/livekit-lower-third.jpg" width="960" height="540" loading="lazy"
+                 alt="Lower third animata con nome e ruolo di un ospite.">
+            <figcaption>Lower third da comandare dal vivo</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/livekit-aurora-blu-verde.jpg" width="960" height="540" loading="lazy"
+                 alt="Sfondo animato con macchie di luce blu, verde e ciano.">
+            <figcaption>Sfondi animati, come l'aurora</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/livekit-griglia-prospettiva.jpg" width="960" height="540" loading="lazy"
+                 alt="Sfondo con un pavimento a griglia retro-futuristico che corre verso l'orizzonte.">
+            <figcaption>O la griglia retro-futuristica</figcaption>
+          </figure>
+        </div>
+
+        <div class="stats stats-4 reveal">
+          <div><strong>11</strong><span>sfondi animati</span></div>
+          <div><strong>3</strong><span>schermate pronte</span></div>
+          <div><strong>12</strong><span>overlay</span></div>
+          <div><strong>3</strong><span>transizioni</span></div>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="tile tile-light reveal">
+            <h3>Una palette per tutto</h3>
+            <p>Tutti i file prendono i colori dallo stesso posto, quindi stanno bene insieme. Cambi tema e cambia tutta la diretta. I temi pronti sono dieci.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Lower third dal vivo</h3>
+            <p>Un pannello dentro OBS: scrivi il nome dell'ospite e premi Mostra. Usa il WebSocket che OBS ha già di suo.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Si cambia dall'indirizzo</h3>
+            <p>Titolo, minuti, social, colori: li scrivi nell'URL della fonte. Lo stesso file può servire a due scene diverse.</p>
+          </article>
+        </div>
+        <figure class="themes reveal">
+          <img src="assets/livekit-temi-esempio.jpg" width="1400" height="595" loading="lazy"
+               alt="Lo stesso elemento grafico in diversi temi di colore.">
+          <figcaption>Lo stesso elemento, temi diversi. C'è anche un editor visuale per provarli al volo.</figcaption>
+        </figure>
+        <p class="stack stack-light reveal"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>OBS WebSocket</span></p>
+      </div>
+    </section>
+
     <!-- ALTRI PROGETTI -->
     <section id="altri" class="section-light">
       <div class="wrap">
@@ -316,9 +384,65 @@
       <div class="wrap center">
         <h2 class="section-title reveal">Facciamo due chiacchiere?</h2>
         <p class="lede reveal">Un evento, un'idea strana o un vecchio banco da far parlare con il computer:
-          se ti va di parlarne, mi trovi qui.</p>
+          scrivimi qui sotto e ti rispondo io.</p>
+      </div>
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-side">
+            <article class="card reveal">
+              <span class="like-emoji" aria-hidden="true">🎛️</span>
+              <h3>Hai un evento?</h3>
+              <p>Sono disponibile per eventi e spettacoli: audio, luci, video, registrazioni.
+                E se ti servono i sottotitoli live, porto Duetto e ci penso io. Basta scrivermi.</p>
+            </article>
+            <article class="card reveal">
+              <span class="like-emoji" aria-hidden="true">☕</span>
+              <h3>Ti piace quel che faccio?</h3>
+              <p>I miei progetti sono gratis e li porto avanti nel tempo libero.
+                Se ti sono stati utili e ti va di fare una donazione, un caffè su Ko-fi mi aiuta a continuare.</p>
+              <div class="kofi-slot">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1X62AXF4L');kofiwidget2.draw();</script>
+              </div>
+            </article>
+          </div>
+
+          <form class="card contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- La chiave di Web3Forms non è un segreto: dice solo a quale casella inoltrare i messaggi, senza mostrare l'indirizzo. -->
+            <input type="hidden" name="access_key" value="da874956-e5cb-4bf4-9e70-c7246b7b8ad5">
+            <input type="hidden" name="from_name" value="Portfolio di Samuel">
+            <input type="hidden" name="subject" value="Nuovo messaggio dal portfolio">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <h3>Scrivimi</h3>
+            <label class="field">
+              <span>Come ti chiami</span>
+              <input type="text" name="name" autocomplete="name" required maxlength="80">
+            </label>
+            <label class="field">
+              <span>La tua email, per risponderti</span>
+              <input type="email" name="email" autocomplete="email" required maxlength="120">
+            </label>
+            <label class="field">
+              <span>Di cosa si tratta</span>
+              <select name="argomento">
+                <option value="evento">Un evento</option>
+                <option value="duetto">Duetto per lavoro o licenza</option>
+                <option value="progetto">Uno dei miei progetti</option>
+                <option value="altro" selected>Altro, o solo un saluto</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Messaggio</span>
+              <textarea name="message" rows="5" required maxlength="4000"></textarea>
+            </label>
+            <button class="btn btn-primary btn-block" type="submit">Invia</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="form-privacy">Uso i tuoi dati solo per risponderti. Il messaggio passa da
+              <a class="inline-link" href="https://web3forms.com/privacy" target="_blank" rel="noopener">Web3Forms</a> e arriva a me: la mia email non è pubblica.</p>
+          </form>
+        </div>
         <div class="cta-row reveal">
-          <a class="btn btn-primary" href="https://github.com/Samuel782" target="_blank" rel="noopener">Trovami su GitHub</a>
+          <a class="link-arrow" href="https://github.com/Samuel782" target="_blank" rel="noopener">Oppure trovami su GitHub</a>
         </div>
       </div>
     </section>
