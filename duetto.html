@@ -34,7 +34,7 @@
     <header id="duetto" class="hero product section-dark">
       <div class="wrap center">
         <img class="app-icon reveal" src="assets/duetto-icon.png" width="512" height="512" alt="">
-        <span class="badge badge-live reveal">Nuova versione 1.2</span>
+        <span class="badge badge-live reveal">Nuova versione 2.0</span>
         <h1 class="product-name reveal">Duetto</h1>
         <p class="product-tag reveal">Tante lingue. Due schermi.<br>Una regia.</p>
         <p class="lede reveal">Sottotitoli in diretta per eventi, conferenze e dirette streaming.
@@ -83,42 +83,81 @@
     <!-- NOVITÀ -->
     <section id="novita" class="section-light">
       <div class="wrap">
-        <h2 class="section-title reveal">Cosa c'è di nuovo nella 1.2.</h2>
-        <p class="section-sub reveal">È l'aggiornamento più grosso da quando esiste Duetto.</p>
+        <h2 class="section-title reveal">Duetto 2.0.<br>Riscritto da zero in Rust.</h2>
+        <p class="section-sub reveal">Stesse funzioni e stesse pagine, in un'app circa 20-30 volte più leggera da scaricare.
+          Usa il motore web che hai già nel sistema, invece di portarsene dietro uno.</p>
+        <div class="sizes reveal">
+          <div class="size-row">
+            <h3>Mac con chip Apple</h3>
+            <div class="size-bar size-old" style="--w:83.1%"><i></i><span>1.2.3 · 118 MB</span></div>
+            <div class="size-bar size-new" style="--w:3.8%"><i></i><span>2.0.0 · 5,4 MB</span></div>
+          </div>
+          <div class="size-row">
+            <h3>Mac Intel</h3>
+            <div class="size-bar size-old" style="--w:88.0%"><i></i><span>1.2.3 · 125 MB</span></div>
+            <div class="size-bar size-new" style="--w:3.9%"><i></i><span>2.0.0 · 5,5 MB</span></div>
+          </div>
+          <div class="size-row">
+            <h3>Windows a 64 bit</h3>
+            <div class="size-bar size-old" style="--w:100.0%"><i></i><span>1.2.3 · 142 MB</span></div>
+            <div class="size-bar size-new" style="--w:3.2%"><i></i><span>2.0.0 · 4,6 MB</span></div>
+          </div>
+        </div>
         <div class="grid grid-3 news">
           <article class="tile tile-light reveal">
-            <span class="tile-icon" aria-hidden="true">文</span>
-            <h3>Molte più lingue <span class="tag-trial">In prova</span></h3>
-            <p>Non più solo italiano e inglese: 19 lingue parlate e 30 in cui tradurre. Per ogni evento scegli le tue.</p>
+            <span class="tile-icon" aria-hidden="true">◉</span>
+            <h3>Audio preso dal sistema</h3>
+            <p>Non dipende più dalla finestra della regia, anche quando è nascosta. Con un'interfaccia a molti ingressi usa i primi due, e solo quelli con segnale.</p>
           </article>
           <article class="tile tile-light reveal">
-            <span class="tile-icon" aria-hidden="true">◐</span>
-            <h3>Ogni schermo, la sua lingua</h3>
-            <p>Inglese sulla diretta e spagnolo sul maxischermo, per esempio. Ognuno ha il suo menu “Traduci in”.</p>
+            <span class="tile-icon" aria-hidden="true">⌁</span>
+            <h3>Ingresso “Predefinito”</h3>
+            <p>Segue il microfono scelto nel sistema. E se il permesso manca o l'ingresso sparisce, te lo dice chiaramente.</p>
           </article>
           <article class="tile tile-light reveal">
-            <span class="tile-icon" aria-hidden="true">CC</span>
-            <h3>Sottotitoli CC in diretta <span class="tag-trial">In prova</span></h3>
-            <p>Duetto li manda a OBS, e su YouTube e Twitch chi guarda li accende con il tasto CC.</p>
-          </article>
-          <article class="tile tile-light reveal">
-            <span class="tile-icon" aria-hidden="true">Aa</span>
-            <h3>Parla anche inglese</h3>
-            <p>Regia, impostazioni e messaggi in italiano o in inglese. Cambi al volo, senza riavviare.</p>
+            <span class="tile-icon" aria-hidden="true">⌂</span>
+            <h3>Privato di partenza</h3>
+            <p>I sottotitoli si vedono solo sul computer che usa Duetto. L'accesso dalla rete lo apri tu, dalle Impostazioni.</p>
           </article>
           <article class="tile tile-light reveal">
             <span class="tile-icon" aria-hidden="true">⚿</span>
-            <h3>Chiavi al sicuro</h3>
-            <p>Le chiavi e la password di OBS sono cifrate nel portachiavi del sistema. Copiare i file su un altro computer non basta per usarle.</p>
+            <h3>Regia protetta</h3>
+            <p>Gli altri siti aperti sul computer non possono comandare la regia. La correzione è arrivata con la 1.2.3.</p>
           </article>
           <article class="tile tile-light reveal">
-            <span class="tile-icon" aria-hidden="true">↑</span>
-            <h3>Ti avvisa degli aggiornamenti</h3>
-            <p>All'avvio ti dice se c'è una versione nuova. Non installa niente da solo e non compare mai durante la diretta.</p>
+            <span class="tile-icon" aria-hidden="true">AI</span>
+            <h3>Avviso per il pubblico</h3>
+            <p>Se vuoi, compare la scritta che i sottotitoli sono generati automaticamente, nella lingua dell'uscita o con un testo tuo. Non finisce nei CC di OBS.</p>
+          </article>
+          <article class="tile tile-light reveal">
+            <span class="tile-icon" aria-hidden="true">≡</span>
+            <h3>Componenti trasparenti</h3>
+            <p>Licenze in ogni pacchetto, elenco dei componenti (SBOM) e codici SHA-256 per controllare il download.</p>
           </article>
         </div>
-        <p class="trial-note reveal"><span class="tag-trial">In prova</span> vuol dire che l'ho provato con servizi simulati
-          e lo sto ancora mettendo alla prova sul campo. Italiano e inglese, invece, li uso già agli eventi.</p>
+        <div class="grid grid-2 notes">
+          <article class="tile tile-light reveal">
+            <h3>Prima di aggiornare</h3>
+            <ul class="facts">
+              <li><strong>Si riprendono da soli:</strong> lingue, stili, preset, termini chiave e glossario.</li>
+              <li><strong>Da rimettere:</strong> chiavi API, password di OBS, ingresso audio e permesso del microfono.</li>
+              <li><strong>Mac:</strong> serve macOS 14 o successivo.</li>
+              <li><strong>Windows:</strong> serve WebView2, già presente in Windows 11 e nella maggior parte dei PC con Windows 10.</li>
+              <li><strong>Hai la 1.2.2 o una più vecchia?</strong> Aggiorna: la 1.2.3 ha chiuso un problema di sicurezza della regia.</li>
+            </ul>
+          </article>
+          <article class="tile tile-light reveal">
+            <h3>Cosa devo ancora provare</h3>
+            <ul class="facts">
+              <li><strong>Windows e Mac Intel:</strong> avviati in automatico, ma non con un'interfaccia audio vera. Quello Intel è partito su un Mac con chip Apple.</li>
+              <li><strong>Sottotitoli CC:</strong> provati solo con un OBS simulato.</li>
+              <li><strong>Su Mac,</strong> uscendo dal Dock la conferma di chiusura potrebbe non comparire.</li>
+              <li><strong>In ogni caso,</strong> provalo prima di usarlo a un evento.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="trial-note reveal"><span class="tag-trial">In prova</span> Dove vedi questa etichetta, la funzione c'è ma l'ho provata solo
+          con servizi simulati. <a class="inline-link" href="https://github.com/Samuel782/Duetto/releases" target="_blank" rel="noopener">Tutte le versioni</a></p>
       </div>
     </section>
 
@@ -132,7 +171,7 @@
       <div class="wrap">
         <div class="lang-cloud reveal"><span class="chip chip-field">italiano</span><span class="chip chip-field">inglese</span><span class="chip">spagnolo</span><span class="chip">francese</span><span class="chip">tedesco</span><span class="chip">portoghese</span><span class="chip">olandese</span><span class="chip">rumeno</span><span class="chip">svedese</span><span class="chip">danese</span><span class="chip">norvegese</span><span class="chip">finlandese</span><span class="chip">estone</span><span class="chip">turco</span><span class="chip">russo</span><span class="chip">arabo</span><span class="chip">cinese</span><span class="chip">giapponese</span><span class="chip">coreano</span><span class="chip chip-tr">polacco</span><span class="chip chip-tr">ceco</span><span class="chip chip-tr">slovacco</span><span class="chip chip-tr">sloveno</span><span class="chip chip-tr">ungherese</span><span class="chip chip-tr">lituano</span><span class="chip chip-tr">lettone</span><span class="chip chip-tr">indonesiano</span><span class="chip chip-tr">greco</span><span class="chip chip-tr">bulgaro</span><span class="chip chip-tr">ucraino</span></div>
         <ul class="lang-legend reveal">
-          <li><span class="chip chip-field">a</span> provate sul campo</li>
+          <li><span class="chip chip-field">a</span> attive di partenza</li>
           <li><span class="chip">a</span> parlate e tradotte, in prova</li>
           <li><span class="chip chip-tr">a</span> solo traduzione, in prova</li>
         </ul>
@@ -208,8 +247,8 @@
           <p>Se chi parla usa già la lingua di uno schermo, quello schermo passa a un'altra lingua tra quelle scelte.
             Con italiano e inglese funziona come sempre: l'italiano diventa inglese e l'inglese diventa italiano.</p>
         </div>
-        <p class="note note-dark reveal">Le uscite sono semplici indirizzi web: li copi con un clic e li apri in OBS,
-          sul computer del proiettore o su un altro PC della stessa rete.</p>
+        <p class="note note-dark reveal">Le uscite sono semplici indirizzi web: li copi con un clic e li apri in OBS.
+          Per usarli da un altro computer della stessa rete, prima lo permetti nelle Impostazioni.</p>
       </div>
     </section>
 
@@ -276,7 +315,7 @@
           <article class="tile reveal">
             <span class="tile-icon" aria-hidden="true">≡</span>
             <h3>I file a fine serata</h3>
-            <p>Un SRT per ogni lingua andata in onda, tipo <code>spagnolo.srt</code> accanto a <code>originale.srt</code>, e la trascrizione con tutte le traduzioni.</p>
+            <p>Un SRT per ogni lingua andata in onda, tipo <code>spagnolo.srt</code> accanto a <code>originale.srt</code>, e la trascrizione con tutte le traduzioni. Se non vuoi salvare niente, lo spegni.</p>
           </article>
           <article class="tile reveal">
             <span class="tile-icon" aria-hidden="true">⌘</span>
@@ -334,8 +373,9 @@
             <ul class="facts reveal">
               <li><strong>Si parte gratis.</strong> Tutti e due danno del credito gratuito per cominciare.</li>
               <li><strong>Poi costa poco.</strong> Un'ora di parlato viene più o meno uno o due euro.</li>
-              <li><strong>Le chiavi restano tue.</strong> Cifrate nel portachiavi del sistema (Portachiavi su Mac, protezione dati su Windows), sul tuo computer come i file dei sottotitoli.</li>
+              <li><strong>Le chiavi restano tue.</strong> Stanno sul tuo computer, cifrate con il portachiavi del sistema.</li>
               <li><strong>Serve internet.</strong> L'audio va ad AssemblyAI e il testo a DeepL: se l'evento lo richiede, avvisa relatori e pubblico.</li>
+              <li><strong>Io non ricevo niente.</strong> Nessun account, nessuna statistica, nessun server mio. I dettagli sono nella <a class="inline-link" href="https://github.com/Samuel782/Duetto/blob/main/PRIVACY.it.md" target="_blank" rel="noopener">pagina privacy</a>.</li>
               <li><strong>Dati in Europa, se serve.</strong> Un'opzione fa elaborare l'audio solo sui server europei di AssemblyAI, e la regia ti dice quale server è attivo. <span class="tag-trial">In prova</span></li>
             </ul>
           </div>
@@ -391,8 +431,8 @@
         <div class="faq reveal">
           <details>
             <summary>Su cosa funziona?</summary>
-            <p>Su Mac. C'è anche la versione per Windows, ma è nuova e la sto ancora provando.
-              L'interfaccia è in italiano o in inglese: segue la lingua del computer, oppure la scegli tu.</p>
+            <p>Su Mac con macOS 14 o successivo e su PC Windows a 64 bit. I pacchetti per Windows e Mac Intel
+              non li ho ancora provati con un'interfaccia audio vera. L'interfaccia è in italiano o in inglese: segue la lingua del computer, oppure la scegli tu.</p>
           </details>
           <details>
             <summary>Funziona senza internet?</summary>
@@ -407,11 +447,21 @@
           <details>
             <summary>Che lingue capisce?</summary>
             <p>Riconosce 19 lingue parlate e traduce in 30. Per ogni evento ne scegli fino a 6 parlate e fino a 8 di traduzione.
-              Italiano e inglese li uso già agli eventi; le altre funzionano con i servizi simulati e le sto provando con quelli veri.</p>
+              Italiano e inglese sono pronti da subito; le altre le ho provate solo con servizi simulati.</p>
           </details>
           <details>
             <summary>I dati possono restare in Europa?</summary>
             <p>Sì: c'è un'opzione che fa elaborare l'audio ad AssemblyAI solo sui server europei. È nuova, quindi prima di un evento importante fai una prova.</p>
+          </details>
+          <details>
+            <summary>Posso fidarmi dei sottotitoli?</summary>
+            <p>Sono automatici e possono contenere errori: non usarli come unico riferimento dove uno sbaglio può fare danni.
+              Puoi mostrare al pubblico un avviso che sono generati con l'AI.</p>
+          </details>
+          <details>
+            <summary>Passo dalla versione 1: perdo le impostazioni?</summary>
+            <p>Lingue, stili, preset, termini chiave e glossario restano. Devi rimettere le chiavi API e la password di OBS,
+              e scegliere di nuovo l'ingresso audio e il permesso del microfono.</p>
           </details>
           <details>
             <summary>Si aggiorna da solo?</summary>
@@ -423,7 +473,8 @@
           </details>
           <details>
             <summary>Sono uno sviluppatore, posso metterci le mani?</summary>
-            <p>Certo. Serve Node.js 20 o successivo: <code>npm install</code> e poi <code>npm run app</code>.
+            <p>Certo. È scritto in Rust con Tauri, con le pagine in HTML e JavaScript. Servono Rust e, per i test,
+              Node.js 20 o successivo: <code>npm install</code> e poi <code>npm run app</code>.
               Con <code>npm test</code> giri i test con servizi finti, senza rete né credito.
               Il codice è su <a class="inline-link" href="https://github.com/Samuel782/Duetto" target="_blank" rel="noopener">GitHub</a>.</p>
           </details>

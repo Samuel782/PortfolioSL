@@ -511,6 +511,18 @@ kbd {
 .pb-cc { font: 700 11px/1 var(--font); color: #fff; border: 1.5px solid #fff; border-radius: 3px; padding: 2px 4px; box-shadow: 0 2px 0 -0px #e5212b; border-bottom: 2.5px solid #e5212b; }
 .pb-gear { width: 14px; height: 14px; border-radius: 50%; border: 3px dotted #fff; }
 
+/* Duetto 2.0 */
+.sizes { margin-top: 56px; display: grid; gap: 28px; background: #fff; border: 1px solid var(--line-light); border-radius: var(--radius); padding: 36px 32px; }
+.size-row h3 { font-size: 17px; font-weight: 600; margin-bottom: 10px; }
+.size-bar { display: flex; align-items: center; gap: 12px; margin-top: 6px; }
+.size-bar i { flex: none; height: 18px; border-radius: 5px; width: calc(var(--w) * .62); }
+.size-bar span { font-family: var(--mono); font-size: 12px; white-space: nowrap; color: var(--ink-2); }
+.size-old i { background: #d3cec3; }
+.size-new i { background: var(--blue); }
+.size-new span { color: var(--ink); }
+.grid.news, .grid.notes { margin-top: 20px; }
+.notes .facts { margin-top: 18px; }
+
 /* ---------- Identity: own type, labels and frames ---------- */
 .hero-title, .section-title, .product-name, .product-tag, .statement-text, .stats strong,
 .nav-brand, .photo h3, .about-text p.big, .step-n {
