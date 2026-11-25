@@ -68,6 +68,10 @@ if (demo) {
   const lang = demo.querySelector('.captions-lang');
   const lines = [
     ['IT → EN', 'Buonasera a tutti e grazie di essere qui stasera.', 'Good evening everyone, and thank you for being here tonight.'],
+    // Citazione da Aldo, Giovanni e Giacomo, «Tel chi el telùn» (1999).
+    ['IT → EN', 'E adesso, un attimo di ripasso di inglese.', 'And now, a quick English refresher.'],
+    ['IT → EN', 'Sui marciapiedi…', 'On the marciapaisis.'],
+    ['IT → EN', 'Ma va là, va là, va là!', 'Oh, come on, be serious!'],
     ['EN → IT', "Let's start with a quick look at tonight's programme.", 'Iniziamo con uno sguardo veloce al programma della serata.'],
     ['IT → EN', 'Il prossimo intervento parla di audio in rete.', 'The next talk is about networked audio.'],
     ['ES → IT', 'Muchas gracias por la invitación, es un placer estar aquí.', "Grazie mille per l'invito, è un piacere essere qui."],
