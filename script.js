@@ -67,31 +67,33 @@ if (demo) {
   const tr = demo.querySelector('.captions-tr');
   const lang = demo.querySelector('.captions-lang');
   const lines = [
-    ['IT → EN', 'Buonasera a tutti e grazie di essere qui stasera.', 'Good evening everyone, and thank you for being here tonight.'],
     // Citazione da Aldo, Giovanni e Giacomo, «Tel chi el telùn» (1999).
-    ['IT → EN', 'E adesso, un attimo di ripasso di inglese.', 'And now, a quick English refresher.'],
-    ['IT → EN', 'Sui marciapiedi…', 'On the marciapaisis.'],
-    ['IT → EN', 'Ma va là, va là, va là!', 'Oh, come on, be serious!'],
-    ['EN → IT', "Let's start with a quick look at tonight's programme.", 'Iniziamo con uno sguardo veloce al programma della serata.'],
-    ['IT → EN', 'Il prossimo intervento parla di audio in rete.', 'The next talk is about networked audio.'],
-    ['ES → IT', 'Muchas gracias por la invitación, es un placer estar aquí.', "Grazie mille per l'invito, è un piacere essere qui."],
-    ['IT → ES', 'Diamo il benvenuto al nostro primo relatore.', 'Demos la bienvenida a nuestro primer ponente.'],
+    ['IT → EN (Prof. Cataldo)', 'Seconda frase', 'number two.'],
+    ['IT → EN (Prof. Cataldo)', 'Una frase che capita spesso di sentir dire, o di dover dire…', 'Yes.'],
+    ['IT → EN (Prof. Cataldo)', 'Questa frase si sente in mezzo al traffico…', 'In the traffic.'],
+    ['IT → EN (Prof. Cataldo)', 'Nei parcheggi…', 'In the parking.'],
+    ['IT → EN (Prof. Cataldo)', 'Sui marciapiedi…', 'On the marciapaisis.'],
+    ['IT → EN (Prof. Cataldo)', 'Ma va là, va là, va là!', 'Let’s go, let’s go, let’s go!'],
   ];
-  let i = 0, visible = false, timer = null;
-  const wait = (ms) => new Promise((r) => { timer = setTimeout(r, ms); });
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
   async function play() {
-    while (visible) {
-      const [l, o, t] = lines[i % lines.length];
-      lang.textContent = l;
+    for (let i = 0; ; i = (i + 1) % lines.length) {
+      const [l, o, t] = lines[i];
+      // Fade both lines out and empty them before the next sentence starts.
+      orig.classList.add('hidden');
       tr.classList.add('hidden');
+      await wait(260);
+      orig.textContent = '';
+      tr.textContent = '';
+      orig.classList.remove('hidden');
+      lang.textContent = l;
       if (reduceMotion) {
         orig.textContent = o;
       } else {
         orig.innerHTML = '<span class="cursor"></span>';
         const cursor = orig.firstChild;
         for (const word of o.split(' ')) {
-          if (!visible) return;
           cursor.before((cursor.previousSibling ? ' ' : '') + word);
           await wait(110 + Math.random() * 90);
         }
@@ -101,16 +103,11 @@ if (demo) {
       tr.textContent = t;
       tr.classList.remove('hidden');
       await wait(3600);
-      i++;
     }
   }
 
-  new IntersectionObserver(([e]) => {
-    const was = visible;
-    visible = e.isIntersecting;
-    if (visible && !was) play();
-    if (!visible) clearTimeout(timer);
-  }, { threshold: 0.3 }).observe(demo);
+  // Always running: it must not get stuck if the browser misses a scroll event.
+  play();
 }
 
 // Contact form: sends through Web3Forms, so the inbox address never appears on the page.

@@ -396,10 +396,11 @@ section { padding: 120px 0; }
 @keyframes pulse { 50% { opacity: .35; } }
 .captions-orig, .captions-tr { max-width: 820px; font-size: clamp(20px, 3vw, 34px); font-weight: 700; line-height: 1.25; letter-spacing: -0.015em; min-height: 1.25em; }
 .captions-orig { color: #fff; }
-.captions-tr { color: #ffd60a; transition: opacity .5s var(--ease); }
-.captions-tr.hidden { opacity: 0; }
+.captions-tr { color: #ffd60a; }
+.captions-orig, .captions-tr { transition: opacity .25s var(--ease); }
+.captions-orig.hidden, .captions-tr.hidden { opacity: 0; }
 .captions-orig .cursor { display: inline-block; width: 3px; height: .9em; margin-left: 3px; vertical-align: -0.1em; background: #fff; animation: pulse 1s steps(1) infinite; }
-.demo-note { margin-top: 18px; text-align: center; font-size: 14px; color: var(--mute-dark); }
+.demo-note { max-width: 680px; margin: 18px auto 0; text-align: center; font-size: 14px; color: var(--mute-dark); }
 
 .steps { list-style: none; padding: 0; margin: 56px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .step { background: #fff; border-radius: var(--radius); padding: 32px 28px; }
